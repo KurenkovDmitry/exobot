@@ -1,5 +1,3 @@
-# exobot
-python -m pip install vk_api
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 def write_msg(user_id, message):
