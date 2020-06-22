@@ -5,6 +5,7 @@ from vk_api.longpoll import VkLongPoll, VkEventType
 
 from commander.commander import Commander
 
+
 def write_msg(user_id, message):
     vk.method('messages.send', {'user_id': user_id, 'message': message, 'random_id': random.randint(0, 2048)})
 
@@ -17,7 +18,6 @@ longpoll = VkLongPoll(vk)
 commander = Commander()
 
 print("Бот запущен")
-
 for event in longpoll.listen():
 
     # Если пришло новое сообщение
