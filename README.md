@@ -1,8 +1,6 @@
-python -m pip install vk_api
-# exobot
-python -m pip install vk_api
-import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
+import vk_api
+
 def write_msg(user_id, message):
     vk.method('messages.send', {'user_id': user_id, 'message': message})
 
